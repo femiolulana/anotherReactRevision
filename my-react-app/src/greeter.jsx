@@ -7,3 +7,5 @@ function Greeter(props) {
 }
 
 export default Greeter
+
+//Always use propTypes and defaultProps

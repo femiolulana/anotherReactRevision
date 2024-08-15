@@ -30,3 +30,4 @@ Demo.defaultProps = {
 }
 
 export default Demo;
+//Always use propTypes and defaultProps
