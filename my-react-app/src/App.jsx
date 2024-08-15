@@ -6,6 +6,7 @@ import Food from './food'
 import Card from './card'
 import Demo from './demo'
 import Greeter from './greeter'
+import List from './list'
 
 
 
@@ -13,8 +14,8 @@ function App(){
 
   return (
   <>
-  
-    <Greeter isLoggedIn={true} username='FemiCode'/>
+  <List />
+    
 
   </>
     )
