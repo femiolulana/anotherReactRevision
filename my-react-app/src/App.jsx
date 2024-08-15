@@ -16,6 +16,8 @@ function App(){
   <Demo key1 = {56} key2 = "" key3 = "" key4= ""/>
   <Card yearProduced ="2024" active={false}/>
   <Card yearProduced ="2024" active={false}/>
+  <Demo />
+  
 
   
   
