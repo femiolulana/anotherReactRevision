@@ -1,15 +1,38 @@
 import propTypes from "prop-types"
 function List (props){
 
-    const fruits = [{name:'apple',calories:95},
-                    {name:'orange',calories:62}, 
-                    {name:'pear',calories:101},
-                    {name:"pear",calories:105},
-                    {name:'banana',calories:105},
-                    {name:"coconut",calories:283 }
-                ];
-    fruits.sort();
-    const listItems = fruits.map(fruit => <li>{fruit.calories}</li>)  
+    const fruits = [
+        { id: 1, name: 'apple', calories: 95 },
+        { id: 2, name: 'orange', calories: 62 },
+        { id: 3, name: 'pear', calories: 101 },
+        { id: 4, name: 'pear', calories: 101 },
+        { id: 5, name: 'banana', calories: 105 },
+        { id: 6, name: 'coconut', calories: 283 }
+      ];
+      
+      // 1. Sort Alphabetically by Name
+      //fruits.sort((a, b) => a.name.localeCompare(b.name));
+      //console.log('Alphabetically by Name:', fruits);
+      
+      // 2. Sort Reverse Alphabetically by Name
+      //fruits.sort((a, b) => b.name.localeCompare(a.name));
+      //console.log('Reverse Alphabetically by Name:', fruits);
+      
+      // 3. Sort Numerically by Calories (Ascending)
+      //fruits.sort((a, b) => a.calories - b.calories);
+      //console.log('Numerically by Calories (Ascending):', fruits);
+      
+      // 4. Sort Reverse Numerically by Calories (Descending)
+      //fruits.sort((a, b) => b.calories - a.calories);
+      //console.log('Reverse Numerically by Calories (Descending):', fruits);
+      
+    const listItems = fruits.map(fruit => <li key={fruit.id}>
+
+                                                            {fruit.name}:
+                                                            &nbsp;
+                                                        <b>{fruit.calories}</b>
+                                                            
+                                                            </li>)  
     return (
         <>
             <ul>{listItems}</ul>
