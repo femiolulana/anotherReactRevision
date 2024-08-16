@@ -25,6 +25,19 @@ function List (props){
       // 4. Sort Reverse Numerically by Calories (Descending)
       //fruits.sort((a, b) => b.calories - a.calories);
       //console.log('Reverse Numerically by Calories (Descending):', fruits);
+
+
+        // 5. Filter the 'fruits' array to create a new array 'lowCalorieFruits' 
+        // that contains only the fruits with fewer than 100 calories.
+        //const lowCalorieFruits = fruits.filter(fruit => fruit.calories < 100);
+
+
+        // 6. Filter the 'fruits' array to create a new array 'highCalorieFruits'
+        // that contains only the fruits with 100 or more calories.
+        // const highCalorieFruits = fruits.filter(fruit => fruit.calories >= 100);
+
+
+      
       
     const listItems = fruits.map(fruit => <li key={fruit.id}>
 
