@@ -15,3 +15,4 @@ function Card(prop){
 }
 
 export default Card
+//Always use propTypes and defaultProps

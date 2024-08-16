@@ -17,3 +17,4 @@ function Food(){
 }
 
 export default Food;
+//Always use propTypes and defaultProps
